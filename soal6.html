@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tentukanDeretGeometri(arr){
+        let hasil;
+        let arrD = arr[1]/arr[0];
+        for(let i = 1; i < arr.length-1; i++){
+            hasil = arr[i] * arrD === arr[i+1] ? true : false;
+            if (!hasil){
+                break;
+            }
+        }
+        return hasil;
+    }
+    console.log(tentukanDeretGeometri([2, 6, 18, 54]));
+    console.log(tentukanDeretGeometri([1, 2, 3, 4, 7, 9]));
+    </script>
+</body>
+</html>
